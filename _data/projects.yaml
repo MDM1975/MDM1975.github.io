@@ -1,0 +1,11 @@
+- title: OAP Operations and Advising System
+  link: https://github.com/MDM1975/oap-operations-advising-system
+  summary: "The OAP Operations and Advising System is a web-based platform created to simplify the management and advising processes for the University of North Carolina graduate programs at Wilmington. The system is built on the Salesforce platform, using the Lightning Web Components framework and the Apex programming language."
+
+- title: Primality Testing Algorithms
+  link: https://github.com/MDM1975/primality-testing-algorithms
+  summary: "This project is a comprehensive suite of primality testing algorithms implemented in Python. It includes popular methods such as Fermat's Little Theorem, the probabilistic Miller-Rabin test, and the deterministic AKS primality test. The collection is designed to serve both educational purposes and practical applications and is a valuable resource for anyone seeking to understand number theory and algorithm optimization in cryptography and beyond."
+
+- title: Sorting Algorithms
+  link: https://github.com/MDM1975/sorting-algorithms
+  summary: "This project features a variety of sorting algorithms that have been implemented using Python. The focus is on showcasing different computational strategies, from simple to more complex approaches. The collection includes basic algorithms such as bubble sort, selection sort, and insertion sort, as well as advanced techniques like merge sort and quick sort. The goal of this repository is to provide a foundational understanding of sorting mechanisms, making it an essential resource for students and professionals who want to deepen their knowledge of algorithm efficiency and data structure optimization."

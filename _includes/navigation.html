@@ -1,0 +1,20 @@
+<script>
+    const navigate = (url) => window.location.replace(url);
+</script>
+
+<div class="py-4 row">
+    {% for item in site.data.pages %}
+    <div class="col d-flex justify-content-start">
+        <a href="{{ item.link }}" {% if page.url==item.link %} class="fs-5 link-dark text-decoration-none" {% else %}
+            class="fs-5 link-secondary text-decoration-none" {% endif %}>
+            {{ item.name }}
+        </a>
+    </div>
+    {% endfor %}
+    <div class="col d-flex justify-content-end">
+        <img height="25" class="px-1" style="cursor: pointer;" src="/assets/imgs/linkedin-icon.svg"
+            onclick="navigate('https://www.linkedin.com/in/michaelmaloneyiii')">
+        <img height="25" class="px-1" style="cursor: pointer;" src="/assets/imgs/github-icon.svg"
+            onclick="navigate('https://github.com/MDM1975')">
+    </div>
+</div>

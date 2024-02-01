@@ -2,15 +2,31 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>{{ page.title }}</title>
-  <link rel="stylesheet" href="/assets/css/syntax.css" type="text/css" />
+
+  <link rel="stylesheet" href="/assets/styles/syntax.css" type="text/css" />
+  <link rel="stylesheet" href="/assets/styles/styles.css" type="text/css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script type="module">
+    import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+    mermaid.initialize({ startOnLoad: false, theme: "neutral" });
+    await mermaid.run({ nodes: document.querySelectorAll(".mermaid") });
+  </script>
 </head>
 
-<body>
-  {% include navbar.html %}
-  {{ content }}
+<body class="bg-body">
+  <nav class="container-md">{% include navigation.html %}</nav>
+  <main class="container-md">{{ content }}</main>
 </body>
 
 </html>

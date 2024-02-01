@@ -1,23 +1,13 @@
 ---
 layout: base
-parent: blog
 ---
 
-<div style="text-align: center;">
-    <h1>{{ page.title }}</h1>
-    <p>{{ page.date | date_to_string: "ordinal", "US" }}</p>
-</div>
-<div style="text-align: left">
-    <script type="module">
-        import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+<article class="p-4 text-wrap">
+  <div class="fs-3 mx-auto p-2 text-center">{{ page.title }}</div>
 
-        mermaid.initialize({ startOnLoad: false, theme: 'neutral' });
+  <div class="fs-6 mx-auto p-2 text-center">
+    {{ page.date | date_to_string: "ordinal", "US" }}
+  </div>
 
-        await mermaid.run({
-            nodes: document.querySelectorAll('.mermaid'),
-        });
-    </script>
-    <div style="padding: 2.5rem;">
-        {{ content }}
-    </div>
-</div>
+  <div class="mx-auto p-2 text-start">{{ content }}</div>
+</article>
