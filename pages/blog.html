@@ -5,7 +5,8 @@ layout: base
 
 <div class="container py-2">
   <ul class="list-group list-group-flush">
-    {% for post in site.posts %}
+    {% assign posts = site.posts | sort: 'date' | reverse %}
+    {% for post in posts %}
     <li class="list-group-item d-flex justify-content-between align-items-center">
       <a class="fst-italic link-dark text-decoration-none" href="{{ post.url }}">{{ post.title }}</a>
       <div class="badge bg-secondary">

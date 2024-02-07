@@ -1,6 +1,6 @@
 - title: OAP Operations and Advising System
   link: https://github.com/MDM1975/oap-operations-advising-system
-  summary: "The OAP Operations and Advising System is a web-based platform created to simplify the management and advising processes for the University of North Carolina graduate programs at Wilmington. The system is built on the Salesforce platform, using the Lightning Web Components framework and the Apex programming language."
+  summary: "The OAP Operations and Advising System is a web-based platform created to simplify the management and advising processes for the University of North Carolina Wilmington graduate programs. The system is built on the Salesforce platform, using the Lightning Web Components framework and the Apex programming language."
 
 - title: Primality Testing Algorithms
   link: https://github.com/MDM1975/primality-testing-algorithms
