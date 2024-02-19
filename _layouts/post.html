@@ -2,6 +2,16 @@
 layout: base
 ---
 
+<script type="module">
+  import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+
+  mermaid.initialize({ theme: "neutral" });
+
+  await mermaid.run({
+    nodes: document.querySelectorAll(".mermaid")
+  });
+</script>
+
 <article class="p-4 text-wrap">
   <div class="fs-3 mx-auto p-2 text-center">{{ page.title }}</div>
 

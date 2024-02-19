@@ -1,13 +1,8 @@
 ---
 layout: post
+img: ../assets/imgs/pillars-of-oop.jpg
+summary: "This article explains the four fundamental principles of object-oriented programming: encapsulation, abstraction, inheritance, and polymorphism. These principles are the building blocks of OOP and provide a solid foundation for creating robust, scalable, and maintainable software."
 ---
-
-##### TL;DR
-
-- The four fundamental principles of OOP are encapsulation, abstraction, inheritance, and polymorphism.
-- Encapsulation coalesces data and behavior into a single unit, making data inaccessible for inadvertent modification, which fosters data integrity and security.
-- Abstraction is a mechanism that conceals a class's implementation details and exposes only its functionality to the end user, facilitating code reusability and maintainability.
-- Inheritance confers the capability to construct new classes based on existing ones, promoting code reuse and manifesting identical interfaces in subclasses as their superclass.
 
 ##### The Four Fundamental Principles of OOP
 

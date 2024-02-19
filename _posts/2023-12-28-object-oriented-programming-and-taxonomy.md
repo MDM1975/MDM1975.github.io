@@ -1,16 +1,8 @@
 ---
 layout: post
+summary: "This article explores hierarchical classification in object-oriented programming, drawing parallels with biological taxonomy to illustrate the inheritance mechanism and the class hierarchy structure."
+img: "../assets/imgs/oop-and-taxonomy.jpg"
 ---
-
-##### TL;DR
-
-- Object-oriented programming (OOP) uses a hierarchical classification system to organize software constructs into class hierarchies.
-- The superclass is the parent class, and subclasses inherit its properties while offering flexibility to adapt or improve them according to their needs.
-- Each subclass is a unique extension of the superclass, inheriting its attributes and methods and demonstrating distinct features or behaviors.
-- Subclasses can modify inherited methods through method overriding, enabling them to replace or expand the base behavior with specialized functionalities.
-- OOP's class hierarchy structure allows developers to design software applications in an organized and efficient manner, promoting the creation of streamlined, adaptable systems.
-- Taxonomy, the biological classification based on shared traits, provides a useful metaphor in OOP for understanding and organizing complex code structures.
-- OOP mirrors biological hierarchies through inheritance, facilitating the passing of attributes and behaviors from one class to another.
 
 ##### Hierarchical Classification in Object-Oriented Programming
 

@@ -3,15 +3,20 @@ title: Blog
 layout: base
 ---
 
-<div class="container py-2">
+<div class="container">
+  {% assign posts = site.posts | sort: 'date' | reverse %}
   <ul class="list-group list-group-flush">
-    {% assign posts = site.posts | sort: 'date' | reverse %}
     {% for post in posts %}
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-      <a class="fst-italic link-dark text-decoration-none" href="{{ post.url }}">{{ post.title }}</a>
-      <div class="badge bg-secondary">
-        {{ post.date | date_to_string: "ordinal", "US" }}
-      </div>
+    <li class="list-group-item list-group-item-action d-flex justify-content-between" style="cursor: pointer;"
+      onclick="window.location.replace('{{ post.url }}')">
+      <img style="height: 250px;" class="img-fluid rounded float-start" src="{{ post.img }}">
+      <span class="mx-4">
+        <h5>{{ post.title}}</h5>
+        <p>{{ post.summary }}</p>
+        <p class="text-body-secondary">
+          {{ post.date | date_to_string: "ordinal", "US" }}
+        </p>
+      </span>
     </li>
     {% endfor %}
   </ul>

@@ -1,10 +1,8 @@
 ---
 layout: post
+img: ../assets/imgs/creational-design-patterns.jpg
+summary: Creational design patterns offer proven techniques for managing the creation of objects in software development, leading to more efficient and effective code that is scalable and maintainable. This article provides an overview of the Abstract Factory, Factory Method, Singleton, Builder, and Prototype patterns, along with TypeScript examples.
 ---
-
-##### TL;DR
-
-Creational design patterns offer proven techniques for managing the creation of objects in software development, leading to more efficient and effective code that is scalable and maintainable. The Singleton, Factory Method, and Abstract Factory patterns provide distinct approaches to object creation, enabling developers to achieve specific goals. The Abstract Factory pattern streamlines the interaction between client code and the system, allowing it to operate smoothly with any concrete classes following the abstract factory's blueprint. Meanwhile, the Factory Method pattern empowers object creation without specifying their exact type, promoting flexibility and decoupling between creators and created objects.
 
 ##### Introduction
 
